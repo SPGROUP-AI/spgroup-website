@@ -4,225 +4,210 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SP GROUP CO., LTD — Global Holding Company</title>
-  <meta name="description" content="주식회사 에스피그룹 — 패션·무역·부동산·디지털 커머스를 아우르는 글로벌 홀딩컴퍼니.">
+  <meta name="description" content="(주) 에스피그룹 — 패션·무역·부동산·디지털 커머스를 아우르는 글로벌 홀딩컴퍼니.">
   <meta property="og:title" content="SPGROUP — Global Holding Company">
-  <meta property="og:description" content="Fashion · Trade · Real Estate · Digital Commerce · AI Operations">
   <meta property="og:url" content="https://spgpinc.com">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      background: #1A1F2E;
-      font-family: Georgia, 'Times New Roman', serif;
-      color: #FAFAF8;
-      -webkit-font-smoothing: antialiased;
-    }
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      background: #252C3F;
-      border-bottom: 1px solid rgba(45,79,196,0.2);
-      padding: 0 48px; height: 60px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
-    .nav-logo { font-size: 15px; font-weight: 700; letter-spacing: 3.5px; color: #9B8B72; text-decoration: none; }
-    .nav-links { display: flex; gap: 32px; list-style: none; }
-    .nav-links a { color: #E8e4DD; font-size: 10px; letter-spacing: 2.5px; text-decoration: none; font-family: sans-serif; transition: color 0.2s; }
-    .nav-links a:hover { color: #6B8CFF; }
-    .nav-cta { background: transparent; color: #6B8CFF; font-size: 10px; letter-spacing: 2px; padding: 9px 22px; border: 1px solid #6B8CFF; font-family: sans-serif; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s, color 0.2s; }
-    .nav-cta:hover { background: #6B8CFF; color: #1A1F2E; }
-    .hero { padding: 96px 48px 80px; border-bottom: 1px solid #252C3F; min-height: 460px; display: flex; flex-direction: column; justify-content: center; }
-    .hero-badge { display: inline-block; background: #252C3F; border: 1px solid #2D4FC4; color: #6B8CFF; font-size: 10px; letter-spacing: 2.5px; padding: 6px 16px; margin-bottom: 32px; font-family: sans-serif; }
-    .hero h1 { font-size: 44px; font-weight: 400; line-height: 1.2; color: #FAFAF8; max-width: 600px; letter-spacing: -0.5px; margin-bottom: 20px; }
-    .hero h1 em { color: #6B8CFF; font-style: normal; }
-    .hero-sub { font-size: 12px; color: #9B8B72; letter-spacing: 0.8px; font-family: sans-serif; max-width: 500px; line-height: 2; margin-bottom: 40px; }
-    .hero-actions { display: flex; gap: 14px; align-items: center; }
-    .btn-primary { background: #2D4FC4; color: #FAFAF8; font-size: 10px; letter-spacing: 2.5px; padding: 14px 32px; border: none; font-family: sans-serif; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s; }
-    .btn-primary:hover { background: #6B8CFF; }
-    .btn-ghost { background: none; color: #E8e4DD; font-size: 10px; letter-spacing: 2.5px; padding: 14px 32px; border: 1px solid rgba(232,228,221,0.3); font-family: sans-serif; cursor: pointer; text-decoration: none; display: inline-block; transition: border-color 0.2s, color 0.2s; }
-    .btn-ghost:hover { border-color: #E8E4DD; color: #FAFAF8; }
-    .stats { background: #252C3F; display: grid; grid-template-columns: repeat(4,1fr); }
-    .stat { padding: 28px 32px; border-right: 1px solid rgba(45,79,196,0.2); }
-    .stat:last-child { border-right: none; }
-    .stat-num { font-size: 30px; font-weight: 400; color: #FAFAF8; letter-spacing: -1px; }
-    .stat-num span { color: #6B8CFF; }
-    .stat-label { font-size: 9px; color: #9B8B72; letter-spacing: 2.5px; margin-top: 6px; font-family: sans-serif; }
-    section { padding: 80px 48px; }
-    .section-tag { font-size: 9px; letter-spacing: 3.5px; color: #2D4FC4; font-family: sans-serif; margin-bottom: 14px; }
-    .section-title { font-size: 28px; font-weight: 400; color: #FAFAF8; margin-bottom: 12px; letter-spacing: -0.3px; line-height: 1.3; }
-    .section-sub { font-size: 12px; color: #9B8B72; font-family: sans-serif; letter-spacing: 0.8px; line-height: 1.9; max-width: 520px; margin-bottom: 32px; }
-    .biz-tags-wrap { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
-    .biz-badge { display: inline-block; background: #1A1F2E; border: 1px solid rgba(45,79,196,0.4); color: #6B8CFF; font-size: 9px; letter-spacing: 1.5px; padding: 6px 14px; font-family: sans-serif; }
-    .company-section { background: #1A1F2E; border-top: 1px solid #252C3F; padding: 80px 48px; }
-    .company-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 8px; }
-    .entity-label { font-size: 9px; letter-spacing: 2.5px; color: #2D4FC4; font-family: sans-serif; margin-bottom: 16px; }
-    .fact-row { display: flex; justify-content: space-between; align-items: flex-start; padding: 13px 0; border-bottom: 1px solid rgba(45,79,196,0.15); }
-    .fact-label { font-size: 9px; color: #9B8B72; letter-spacing: 2px; font-family: sans-serif; padding-top: 1px; }
-    .fact-val { font-size: 11px; color: #E8E4DD; font-family: sans-serif; letter-spacing: 0.5px; text-align: right; max-width: 60%; line-height: 1.6; }
-    .fact-val.blue { color: #6B8CFF; }
-    .biz-section { background: #252C3F; padding: 80px 48px; }
-    .biz-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: #1A1F2E; margin-top: 0; }
-    .biz-card { background: #252C3F; padding: 32px 28px; border-bottom: 2px solid transparent; transition: border-color 0.25s, background 0.25s; }
-    .biz-card:hover { border-bottom-color: #2D4FC4; background: #2a3145; }
-    .biz-icon { width: 36px; height: 2px; margin-bottom: 22px; }
-    .biz-card h3 { font-size: 12px; font-weight: 400; color: #FAFAF8; letter-spacing: 1.5px; margin-bottom: 10px; font-family: sans-serif; }
-    .biz-card p { font-size: 11px; color: #9B8B72; font-family: sans-serif; line-height: 1.9; }
-    .biz-tag { display: inline-block; margin-top: 16px; font-size: 9px; letter-spacing: 2px; color: #6B8CFF; font-family: sans-serif; }
-    .contact-wrap { padding: 80px 48px; text-align: center; border-top: 1px solid #252C3F; }
-    .contact-wrap h2 { font-size: 26px; font-weight: 400; color: #FAFAF8; margin-bottom: 14px; }
-    .contact-wrap > p { font-size: 12px; color: #9B8B72; font-family: sans-serif; letter-spacing: 0.8px; line-height: 1.8; margin-bottom: 28px; }
-    .jarvis-block { background: #252C3F; border-left: 2px solid #2D4FC4; padding: 16px 24px; max-width: 460px; margin: 0 auto 32px; text-align: left; }
-    .jarvis-label { font-size: 9px; letter-spacing: 2.5px; color: #2D4FC4; font-family: sans-serif; margin-bottom: 6px; }
-    .jarvis-email { font-size: 13px; color: #6B8CFF; font-family: sans-serif; letter-spacing: 1px; margin-bottom: 6px; }
-    .jarvis-desc { font-size: 10px; color: #9B8B72; font-family: sans-serif; line-height: 1.8; }
-    .contact-btns { display: flex; gap: 14px; justify-content: center; }
-    footer { background: #252C3F; border-top: 2px solid #9B8B72; padding: 32px 48px; display: flex; justify-content: space-between; align-items: center; }
-    .footer-logo { font-size: 13px; font-weight: 700; letter-spacing: 3.5px; color: #9B8B72; }
-    .footer-logo span { font-weight: 400; font-size: 10px; letter-spacing: 1px; margin-left: 10px; color: rgba(155,139,114,0.6); }
-    .footer-copy { font-size: 10px; color: rgba(155,139,114,0.4); font-family: sans-serif; letter-spacing: 1px; }
-    @media (max-width: 768px) {
-      nav { padding: 0 24px; }
-      .nav-links { display: none; }
-      .hero { padding: 64px 24px 56px; }
-      .hero h1 { font-size: 30px; }
-      .stats { grid-template-columns: repeat(2,1fr); }
-      section, .company-section, .biz-section, .contact-wrap { padding: 56px 24px; }
-      .biz-grid { grid-template-columns: 1fr; }
-      .company-grid { grid-template-columns: 1fr; gap: 32px; }
-      footer { padding: 24px; flex-direction: column; gap: 12px; text-align: center; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:#FFFFFF;font-family:Arial,Helvetica,sans-serif;color:#1A1916;-webkit-font-smoothing:antialiased;}
+    nav{position:sticky;top:0;z-index:100;background:#FFFFFF;border-bottom:2px solid #1A1916;padding:0 56px;height:60px;display:flex;align-items:center;justify-content:space-between;}
+    .nav-logo{font-size:13px;font-weight:700;letter-spacing:6px;color:#1A1916;text-decoration:none;}
+    .nav-links{display:flex;gap:36px;list-style:none;}
+    .nav-links a{font-size:9px;letter-spacing:2.5px;color:#9A9490;text-decoration:none;transition:color 0.2s;}
+    .nav-links a:hover{color:#1A1916;}
+    .nav-cta{background:transparent;border:1.5px solid #6B8CFF;color:#6B8CFF;font-size:9px;letter-spacing:2px;padding:9px 22px;cursor:pointer;text-decoration:none;display:inline-block;transition:all 0.2s;}
+    .nav-cta:hover{background:#6B8CFF;color:#FFFFFF;}
+    .hero{background:#FFFFFF;padding:88px 56px 72px;border-bottom:1px solid #E8E4DE;}
+    .hero-inner{display:grid;grid-template-columns:60% 40%;gap:0;align-items:end;}
+    .tag-wrap{display:flex;align-items:center;gap:14px;margin-bottom:28px;}
+    .tag-line{width:40px;height:2px;background:#9B8B72;}
+    .tag-txt{font-size:8px;letter-spacing:3.5px;color:#9B8B72;}
+    .hero h1{font-size:50px;font-weight:300;color:#1A1916;line-height:1.1;letter-spacing:-2px;font-family:Georgia,'Times New Roman',serif;}
+    .hero h1 strong{font-weight:700;}
+    .hero h1 .blue{color:#6B8CFF;font-style:italic;font-weight:300;}
+    .hero-sub{font-size:12px;color:#7C7870;line-height:2;max-width:420px;margin:24px 0 34px;letter-spacing:0.3px;}
+    .hero-btns{display:flex;gap:12px;flex-wrap:wrap;}
+    .btn-primary{background:#1A1916;color:#FFFFFF;font-size:9px;letter-spacing:2.5px;padding:13px 32px;border:none;cursor:pointer;text-decoration:none;display:inline-block;transition:opacity 0.2s;}
+    .btn-primary:hover{opacity:0.75;}
+    .btn-ghost{background:none;color:#1A1916;font-size:9px;letter-spacing:2px;padding:13px 26px;border:1px solid #D0CCC4;cursor:pointer;text-decoration:none;display:inline-block;transition:border-color 0.2s;}
+    .btn-ghost:hover{border-color:#1A1916;}
+    .hero-stats{display:flex;flex-direction:column;padding-left:48px;border-left:1px solid #E8E4DE;align-self:end;}
+    .h-stat{padding:16px 0;border-bottom:1px solid #F0EDE8;}
+    .h-stat:last-child{border-bottom:none;}
+    .h-stat-num{font-size:32px;font-weight:300;color:#1A1916;letter-spacing:-0.5px;line-height:1;font-family:Georgia,serif;}
+    .h-stat-num em{color:#6B8CFF;font-style:normal;}
+    .h-stat-lbl{font-size:7.5px;letter-spacing:2.5px;color:#B8B4AC;margin-top:4px;}
+    #about{padding:88px 56px;border-bottom:1px solid #E8E4DE;}
+    .section-tag{font-size:8px;letter-spacing:3.5px;color:#9B8B72;margin-bottom:18px;}
+    .section-title{font-size:34px;font-weight:300;color:#1A1916;font-family:Georgia,serif;letter-spacing:-0.5px;margin-bottom:16px;line-height:1.2;}
+    .section-body{font-size:12px;color:#7C7870;line-height:2.2;max-width:560px;margin-bottom:30px;letter-spacing:0.2px;}
+    .biz-tags{display:flex;flex-wrap:wrap;gap:8px;}
+    .biz-tag{font-size:8.5px;letter-spacing:1.5px;color:#1A1916;border:1px solid #D8D4CE;padding:7px 16px;}
+    #company{background:#F8F7F4;padding:88px 56px;border-bottom:1px solid #E8E4DE;}
+    .company-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:12px;}
+    .entity-label{font-size:8px;letter-spacing:2.5px;color:#9B8B72;margin-bottom:20px;}
+    .fact-row{display:flex;justify-content:space-between;align-items:flex-start;padding:13px 0;border-bottom:1px solid #ECEAE4;}
+    .fact-label{font-size:8.5px;letter-spacing:1.5px;color:#B8B4AC;}
+    .fact-val{font-size:11px;color:#1A1916;text-align:right;max-width:58%;line-height:1.7;}
+    .fact-val.blue{color:#6B8CFF;}
+    #business{background:#1A1916;padding:88px 56px;}
+    .business-header{margin-bottom:44px;}
+    .business-header .section-tag{color:rgba(155,139,114,0.7);}
+    .business-header .section-title{color:#F0EDE8;}
+    .biz-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid rgba(255,255,255,0.07);}
+    .biz-card{padding:30px 22px;border-right:1px solid rgba(255,255,255,0.07);border-bottom:1px solid rgba(255,255,255,0.07);transition:background 0.25s;}
+    .biz-card:last-child{border-right:none;}
+    .biz-card:hover{background:rgba(255,255,255,0.04);}
+    .biz-dot{width:5px;height:5px;border-radius:50%;background:#9B8B72;margin-bottom:18px;}
+    .biz-title{font-size:9px;letter-spacing:1.5px;color:#F0EDE8;font-weight:700;margin-bottom:8px;}
+    .biz-desc{font-size:9px;color:rgba(240,237,232,0.38);line-height:1.8;}
+    .biz-sub{font-size:8px;letter-spacing:1.5px;color:rgba(155,139,114,0.6);margin-top:16px;}
+    #contact{padding:88px 56px;border-top:1px solid #E8E4DE;text-align:center;}
+    #contact .section-title{margin-bottom:14px;}
+    #contact p{font-size:12px;color:#7C7870;line-height:1.9;margin-bottom:36px;}
+    .jarvis-block{background:#F8F7F4;border-left:2px solid #6B8CFF;padding:20px 30px;max-width:500px;margin:0 auto 40px;text-align:left;}
+    .jarvis-label{font-size:8px;letter-spacing:2.5px;color:#6B8CFF;margin-bottom:8px;}
+    .jarvis-email{font-size:14px;color:#1A1916;letter-spacing:0.5px;margin-bottom:7px;font-weight:500;}
+    .jarvis-desc{font-size:10px;color:#9A9490;line-height:1.9;}
+    .contact-btns{display:flex;gap:14px;justify-content:center;}
+    footer{background:#FFFFFF;border-top:2px solid #1A1916;padding:24px 56px;display:flex;justify-content:space-between;align-items:center;}
+    .footer-left{display:flex;align-items:center;}
+    .footer-logo{font-size:11px;font-weight:700;letter-spacing:5px;color:#1A1916;}
+    .footer-sep{width:1px;height:14px;background:#D8D4CE;margin:0 14px;}
+    .footer-sub{font-size:9px;color:#B8B4AC;letter-spacing:0.5px;}
+    .footer-copy{font-size:9px;color:#C8C4BC;letter-spacing:0.5px;}
+    @media(max-width:768px){
+      nav{padding:0 24px;}
+      .nav-links{display:none;}
+      .hero,.hero-inner,#about,#company,#business,#contact{padding-left:24px;padding-right:24px;}
+      .hero-inner{grid-template-columns:1fr;gap:40px;}
+      .hero h1{font-size:36px;}
+      .hero-stats{padding-left:0;border-left:none;border-top:1px solid #E8E4DE;padding-top:28px;}
+      .company-grid{grid-template-columns:1fr;gap:36px;}
+      .biz-grid{grid-template-columns:repeat(2,1fr);}
+      footer{padding:20px 24px;flex-direction:column;gap:10px;text-align:center;}
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <a href="#" class="nav-logo">SPGROUP</a>
-    <ul class="nav-links">
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#company">COMPANY</a></li>
-      <li><a href="#business">BUSINESS</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
-    <a href="mailto:jarvis@spgpinc.com?subject=[SPGROUP INQUIRY] Business Inquiry" class="nav-cta">INQUIRY</a>
-  </nav>
+<nav>
+  <a href="#" class="nav-logo">SPGROUP</a>
+  <ul class="nav-links">
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#company">COMPANY</a></li>
+    <li><a href="#business">BUSINESS</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">INQUIRY</a>
+</nav>
 
-  <section class="hero">
-    <div class="hero-badge">SP GROUP CO., LTD &nbsp;·&nbsp; EST. 2022</div>
-    <h1>We build<br><em>global ventures</em><br>that last.</h1>
-    <p class="hero-sub">
-      패션·무역·부동산·디지털 커머스를 아우르는 글로벌 홀딩컴퍼니.<br>
-      A global holding company spanning fashion trade,<br>real estate &amp; digital commerce.
-    </p>
-    <div class="hero-actions">
-      <a href="#business" class="btn-primary">OUR BUSINESS</a>
-      <a href="#contact" class="btn-ghost">INVESTOR RELATIONS</a>
-    </div>
-  </section>
-
-  <div class="stats">
-    <div class="stat"><div class="stat-num">2022<span>.</span>12</div><div class="stat-label">ESTABLISHED</div></div>
-    <div class="stat"><div class="stat-num">5<span>+</span></div><div class="stat-label">BUSINESS VERTICALS</div></div>
-    <div class="stat"><div class="stat-num">KR<span>/</span>US</div><div class="stat-label">OPERATING MARKETS</div></div>
-    <div class="stat"><div class="stat-num">SP<span>·</span>AI</div><div class="stat-label">AI-DRIVEN OPERATIONS</div></div>
-  </div>
-
-  <section id="about">
-    <div class="section-tag">ABOUT</div>
-    <div class="section-title">Holding company<br>built for scale.</div>
-    <p class="section-sub">에스피그룹은 2022년 설립된 홀딩컴퍼니입니다. 패션 무역을 기반으로 부동산, 디지털 커머스로 사업 영역을 확장하며, AI 기반 경영 시스템을 통해 운영 효율성과 글로벌 경쟁력을 동시에 추구합니다.</p>
-    <div class="biz-tags-wrap">
-      <span class="biz-badge">FASHION &amp; TRADE</span>
-      <span class="biz-badge">REAL ESTATE</span>
-      <span class="biz-badge">DIGITAL COMMERCE</span>
-      <span class="biz-badge">AI OPERATIONS</span>
-      <span class="biz-badge">GLOBAL SOURCING</span>
-    </div>
-  </section>
-
-  <div class="company-section" id="company">
-    <div class="section-tag">COMPANY</div>h
-    <div class="section-title" style="font-size:22px; margin-bottom:32px;">Legal entities &amp; registration</div>
-    <div class="company-grid">
-      <div>
-        <div class="entity-label">KOREA ENTITY</div>
-        <div class="fact-row"><span class="fact-label">LEGAL NAME</span><span class="fact-val">주식회사 에스피그룹</span></div>
-        <div class="fact-row"><span class="fact-label">ENGLISH NAME</span><span class="fact-val">SP GROUP CO., LTD</span></div>
-        <div class="fact-row"><span class="fact-label">ESTABLISHED</span><span class="fact-val">2022. 12. 27</span></div>
-        <div class="fact-row"><span class="fact-label">HEADQUARTERS</span><span class="fact-val">Korea</span></div>
-        <div class="fact-row"><span class="fact-label">REGISTRATION</span><span class="fact-val">135811-0459272</span></div>
-        <div class="fact-row"><span class="fact-label">DOMAIN</span><span class="fact-val blue">spgpinc.com</span></div>
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="tag-wrap">
+        <div class="tag-line"></div>
+        <div class="tag-txt">GLOBAL HOLDING COMPANY · EST. 2022</div>
       </div>
-      <div>
-        <div class="entity-label">US ENTITY</div>
-        <div class="fact-row"><span class="fact-label">LEGAL NAME</span><span class="fact-val">SP Group Inc</span></div>
-        <div class="fact-row"><span class="fact-label">EIN</span><span class="fact-val">84-4342979</span></div>
-        <div class="fact-row"><span class="fact-label">STATE</span><span class="fact-val">Delaware</span></div>
-        <div class="fact-row"><span class="fact-label">ESTABLISHED</span><span class="fact-val">January 3, 2020</span></div>
-        <div class="fact-row"><span class="fact-label">ADDRESS</span><span class="fact-val">3911 Concord Pike #8030<br>Wilmington, DE 19803</span></div>
-        <div class="fact-row"><span class="fact-label">TAX STATUS</span><span class="fact-val">S Corporation (IRS Form 2553)</span></div>
+      <h1>
+        <strong>We build</strong><br>
+        <span class="blue">global ventures</span><br>
+        <strong>that last.</strong>
+      </h1>
+      <p class="hero-sub">
+        패션·무역·부동산·디지털 커머스를 아우르는 글로벌 홀딩컴퍼니.<br>
+        Spanning fashion, real estate &amp; digital commerce across KR &amp; US.
+      </p>
+      <div class="hero-btns">
+        <a href="#business" class="btn-primary">OUR BUSINESS</a>
+        <a href="#contact" class="btn-ghost">INVESTOR RELATIONS</a>
       </div>
     </div>
+    <div class="hero-stats">
+      <div class="h-stat"><div class="h-stat-num">2022<em>.</em>12</div><div class="h-stat-lbl">ESTABLISHED</div></div>
+      <div class="h-stat"><div class="h-stat-num">5<em>+</em></div><div class="h-stat-lbl">BUSINESS VERTICALS</div></div>
+      <div class="h-stat"><div class="h-stat-num">KR<em>/</em>US</div><div class="h-stat-lbl">OPERATING MARKETS</div></div>
+      <div class="h-stat"><div class="h-stat-num">SP<em>·</em>AI</div><div class="h-stat-lbl">AI OPERATIONS</div></div>
+    </div>
   </div>
+</section>
 
-  <section class="biz-section" id="business">
+<section id="about">
+  <div class="section-tag">ABOUT</div>
+  <div class="section-title">Holding company<br>built for scale.</div>
+  <p class="section-body">에스피그룹은 2022년 설립된 홀딩컴퍼니입니다. 패션 무역을 기반으로 부동산, 디지털 커머스로 사업 영역을 확장하며, AI 기반 경영 시스템을 통해 운영 효율성과 글로벌 경쟁력을 동시에 추구합니다.</p>
+  <div class="biz-tags">
+    <span class="biz-tag">FASHION &amp; TRADE</span>
+    <span class="biz-tag">REAL ESTATE</span>
+    <span class="biz-tag">DIGITAL COMMERCE</span>
+    <span class="biz-tag">AI OPERATIONS</span>
+    <span class="biz-tag">GLOBAL SOURCING</span>
+  </div>
+</section>
+
+<section id="company">
+  <div class="section-tag">COMPANY</div>
+  <div class="section-title" style="font-size:28px;margin-bottom:36px;">Legal entities &amp; registration</div>
+  <div class="company-grid">
+    <div>
+      <div class="entity-label">KOREA ENTITY</div>
+      <div class="fact-row"><span class="fact-label">LEGAL NAME</span><span class="fact-val">주식회사 에스피그룹</span></div>
+      <div class="fact-row"><span class="fact-label">ENGLISH NAME</span><span class="fact-val">SP GROUP CO., LTD</span></div>
+      <div class="fact-row"><span class="fact-label">ESTABLISHED</span><span class="fact-val">2022. 12. 27</span></div>
+      <div class="fact-row"><span class="fact-label">HEADQUARTERS</span><span class="fact-val">Korea</span></div>
+      <div class="fact-row"><span class="fact-label">REGISTRATION</span><span class="fact-val">135811-0459272</span></div>
+      <div class="fact-row"><span class="fact-label">DOMAIN</span><span class="fact-val blue">spgpinc.com</span></div>
+    </div>
+    <div>
+      <div class="entity-label">US ENTITY</div>
+      <div class="fact-row"><span class="fact-label">LEGAL NAME</span><span class="fact-val">SP Group Inc</span></div>
+      <div class="fact-row"><span class="fact-label">EIN</span><span class="fact-val">84-4342979</span></div>
+      <div class="fact-row"><span class="fact-label">STATE</span><span class="fact-val">Delaware</span></div>
+      <div class="fact-row"><span class="fact-label">ESTABLISHED</span><span class="fact-val">January 3, 2020</span></div>
+      <div class="fact-row"><span class="fact-label">ADDRESS</span><span class="fact-val">3911 Concord Pike #8030<br>Wilmington, DE 19803</span></div>
+      <div class="fact-row"><span class="fact-label">TAX STATUS</span><span class="fact-val">S Corporation (IRS Form 2553)</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="business">
+  <div class="business-header">
     <div class="section-tag">BUSINESS</div>
     <div class="section-title">Five verticals,<br>one group.</div>
-    <p class="section-sub">의류·섬유 OEM/ODM 무역부터 부동산, 디지털 커머스까지 — 다각화된 포트폴리오로 지속 성장합니다.</p>
-    <div class="biz-grid">
-      <div class="biz-card">
-        <div class="biz-icon" style="background:#2D4FC4;"></div>
-        <h3>FASHION &amp; TRADE</h3>
-        <p>의류·섬유 OEM/ODM, 글로벌 바이어 소싱, 미국·아시아 수출입 무역 전문.</p>
-        <span class="biz-tag">OEM · ODM · EXPORT</span>
-      </div>
-      <div class="biz-card">
-        <div class="biz-icon" style="background:#6B8CFF;"></div>
-        <h3>REAL ESTATE</h3>
-        <p>부동산 임대업 및 자산관리. 수도권 중심 포트폴리오 운영.</p>
-        <span class="biz-tag">LEASING · ASSET MGMT</span>
-      </div>
-      <div class="biz-card">
-        <div class="biz-icon" style="background:#9B8B72;"></div>
-        <h3>DIGITAL COMMERCE</h3>
-        <p>프리미엄 온라인 상품 기획·유통·판매 전문 커머스 사업. E-commerce &amp; direct-to-consumer channel operations.</p>
-        <span class="biz-tag">E-COMMERCE · D2C · PREMIUM</span>
-      </div>
-      <div class="biz-card">
-        <div class="biz-icon" style="background:#2D4FC4;"></div>
-        <h3>AI OPERATIONS</h3>
-        <p>JARVIS, VERA, HUNTER, APEX, LUMINA — AI 에이전트 팀 기반 지능형 경영 시스템 운영.</p>
-        <span class="biz-tag">AI · AUTOMATION</span>
-      </div>
-      <div class="biz-card">
-        <div class="biz-icon" style="background:#6B8CFF;"></div>
-        <h3>GLOBAL SOURCING</h3>
-        <p>미국·아시아 바이어 네트워크, OEM 위탁생산 및 무역 중개 전문 서비스.</p>
-        <span class="biz-tag">SOURCING · B2B</span>
-      </div>
-    </div>
-  </section>
-
-  <div class="contact-wrap" id="contact">
-    <div class="section-tag" style="display:block; margin-bottom:14px;">CONTACT</div>
-    <h2>Let's build something together.</h2>
-    <p>바이어 미팅, 파트너십 제안, 투자 문의는 아래로 연락주십시오.</p>
-    <div class="jarvis-block">
-      <div class="jarvis-label">BUSINESS INQUIRY · AI INTELLIGENCE HUB</div>
-      <div class="jarvis-email">jarvis@spgpinc.com</div>
-      <div class="jarvis-desc">
-        JARVIS — SPGROUP AI Email Intelligence<br>
-        실시간 이메일 자동 분류 및 응답 시스템 · All inquiries are processed and routed by JARVIS AI.
-      </div>
-    </div>
-    <div class="contact-btns">
-      <a href="mailto:jarvis@spgpinc.com?subject=[SPGROUP INQUIRY] Business Inquiry" class="btn-primary">BUSINESS INQUIRY</a>
-      <a href="mailto:jarvis@spgpinc.com?subject=[SPGROUP INQUIRY] Investor Relations" class="btn-ghost">INVESTOR RELATIONS</a>
-    </div>
   </div>
+  <div class="biz-grid">
+    <div class="biz-card"><div class="biz-dot"></div><div class="biz-title">FASHION &amp; TRADE</div><div class="biz-desc">의류·섬유 OEM/ODM, 글로벌 바이어 소싱, 미국·아시아 수출입 무역 전문.</div><div class="biz-sub">OEM · ODM · EXPORT</div></div>
+    <div class="biz-card"><div class="biz-dot"></div><div class="biz-title">REAL ESTATE</div><div class="biz-desc">부동산 임대업 및 자산관리. 수도권 중심 포트폴리오 운영.</div><div class="biz-sub">LEASING · ASSET MGMT</div></div>
+    <div class="biz-card"><div class="biz-dot"></div><div class="biz-title">DIGITAL COMMERCE</div><div class="biz-desc">프리미엄 온라인 상품 기획·유통·판매 전문 커머스 사업.</div><div class="biz-sub">E-COMMERCE · D2C</div></div>
+    <div class="biz-card"><div class="biz-dot"></div><div class="biz-title">AI OPERATIONS</div><div class="biz-desc">JARVIS, VERA, HUNTER, APEX, LUMINA — AI 에이전트 팀 기반 지능형 경영.</div><div class="biz-sub">AI · AUTOMATION</div></div>
+    <div class="biz-card"><div class="biz-dot"></div><div class="biz-title">GLOBAL SOURCING</div><div class="biz-desc">미국·아시아 바이어 네트워크, OEM 위탁생산 및 무역 중개 서비스.</div><div class="biz-sub">SOURCING · B2B</div></div>
+  </div>
+</section>
 
-  <footer>
-    <div class="footer-logo">SPGROUP <span>(주) 에스피그룹</span></div>
-    <div class="footer-copy">© 2024 SP GROUP CO., LTD &nbsp;·&nbsp; All rights reserved</div>
-  </footer>
+<div id="contact">
+  <div class="section-tag">CONTACT</div>
+  <div class="section-title">Let's build<br>something together.</div>
+  <p>바이어 미팅, 파트너십 제안, 투자 문의는 아래로 연락주십시오.</p>
+  <div class="jarvis-block">
+    <div class="jarvis-label">BUSINESS INQUIRY · AI INTELLIGENCE HUB</div>
+    <div class="jarvis-email">jarvis@spgpinc.com</div>
+    <div class="jarvis-desc">JARVIS — SPGROUP AI Email Intelligence<br>실시간 이메일 자동 분류 및 응답 시스템 · All inquiries are processed by JARVIS AI.</div>
+  </div>
+  <div class="contact-btns">
+    <a href="mailto:jarvis@spgpinc.com" class="btn-primary">BUSINESS INQUIRY</a>
+    <a href="mailto:jarvis@spgpinc.com" class="btn-ghost">INVESTOR RELATIONS</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-left">
+    <span class="footer-logo">SPGROUP</span>
+    <div class="footer-sep"></div>
+    <span class="footer-sub">(주) 에스피그룹</span>
+  </div>
+  <div class="footer-copy">© 2024 SP GROUP CO., LTD &nbsp;·&nbsp; spgpinc.com</div>
+</footer>
 
 </body>
 </html>
