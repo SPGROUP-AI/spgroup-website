@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://spgpinc.com/sitemap.xml
